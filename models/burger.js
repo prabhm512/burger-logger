@@ -18,4 +18,5 @@ const burger = {
   },
 };
 
+// Export model for controller to use
 module.exports = burger;

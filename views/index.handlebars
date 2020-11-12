@@ -1,0 +1,28 @@
+<div class="conatiner-sm">
+    <div class="row header">
+        <div class="col-sm-12">
+            <img src="/assets/images/wink-burger.png" class="wink-burger">
+            <h1>Eat-Da-Burger!</h1> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ol>
+                {{#each burgers}}
+                    <li>{{ burger_name }}</li>
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        {{!-- Empty div to center input box --}}
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <input class="form-control form-control-lg" type="text" placeholder="Enter Burger Name...">
+        </div>
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-primary submit-btn">Submit</button>
+        </div>
+    </div>
+</div>
