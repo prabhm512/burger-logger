@@ -34,8 +34,18 @@ $(() => {
       type: "PUT",
       data: newDevouredState,
     }).then(() => {
-      console.log("changed devoured to", newDevoured);
       // Reload the page to get the updated list
+      location.reload();
+    });
+  });
+
+  $(".delete-burger").on("click", function (event) {
+    let id = $(this).data("id");
+
+    // Send the DELETE Requst
+    $.ajax(`/api/burgers/${id}`, {
+      type: "DELETE",
+    }).then(() => {
       location.reload();
     });
   });

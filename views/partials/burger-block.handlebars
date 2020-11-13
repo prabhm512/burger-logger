@@ -2,6 +2,7 @@
     {{burger_name}}
 
     {{#if devoured}}
-    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">Devour It!</button>
+    <i class="fas fa-check-square change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}"></i>
+    <i class="fas fa-trash-alt text-danger delete-burger" data-id="{{this.id}}"></i>
     {{else}}{{/if}}
 </li>

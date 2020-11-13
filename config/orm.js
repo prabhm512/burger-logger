@@ -79,6 +79,17 @@ let orm = {
       callback(results);
     });
   },
+  // Delete a burger from the db
+  deleteOne: (condition, callback) => {
+    let queryString = "DELETE FROM burgers";
+    queryString += " WHERE ";
+    queryString += condition;
+
+    connection.query(queryString, (err, results) => {
+      if (err) throw err;
+      callback(results);
+    });
+  },
 };
 
 // Export orm object for the model (burger.js)

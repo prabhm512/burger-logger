@@ -16,6 +16,11 @@ const burger = {
       callback(res);
     });
   },
+  deleteOne: (condition, callback) => {
+    orm.deleteOne(condition, (res) => {
+      callback(res);
+    });
+  },
 };
 
 // Export model for controller to use
