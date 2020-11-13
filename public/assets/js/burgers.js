@@ -19,4 +19,24 @@ $(() => {
       location.reload();
     });
   });
+
+  // Toggle bw devoured and non devoured state
+  $(".change-devoured").on("click", function (event) {
+    let id = $(this).data("id");
+    let newDevoured = $(this).data("newdevoured");
+
+    let newDevouredState = {
+      devoured: newDevoured,
+    };
+
+    // Send the PUT request.
+    $.ajax(`/api/burgers/${id}`, {
+      type: "PUT",
+      data: newDevouredState,
+    }).then(() => {
+      console.log("changed devoured to", newDevoured);
+      // Reload the page to get the updated list
+      location.reload();
+    });
+  });
 });

@@ -11,11 +11,11 @@ const burger = {
       callback(res);
     });
   },
-  // updateOne: (eatStatus, id, callback) => {
-  //   orm.updateOne(eatStatus, id, (res) => {
-  //     callback(res);
-  //   });
-  // },
+  updateOne: (objColVals, condition, callback) => {
+    orm.updateOne(objColVals, condition, (res) => {
+      callback(res);
+    });
+  },
 };
 
 // Export model for controller to use
