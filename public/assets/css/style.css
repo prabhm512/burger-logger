@@ -1,9 +1,46 @@
+body {
+  background-color: rgb(255, 190, 100);
+}
+
+h1 {
+  color: red;
+}
+
 .header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .wink-burger {
   height: 200px;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+}
+
+mark {
+  background-color: yellow;
+}
+
+ol {
+  list-style-position: inside;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.not-eaten-list {
+  padding-left: 10px;
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+
+.eaten-list {
+  padding-left: 10px;
+  background-color: lightgray;
+  border: 1px solid black;
 }
 
 .submit-btn {
