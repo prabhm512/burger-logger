@@ -50,3 +50,10 @@ ol {
 .instructions {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 576px) {
+  .submit-btn {
+    margin-top: 10px;
+    margin-left: 40%;
+  }
+}
