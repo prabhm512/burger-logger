@@ -1,11 +1,12 @@
 {{#if devoured}}
     <li class="not-eaten-list">
         {{burger_name}}
-        <i class="fas fa-check-square change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}"></i>
-        <i class="fas fa-trash-alt text-danger delete-burger" data-id="{{this.id}}"></i>
+        <i class="fas fa-trash-alt text-danger delete-burger" data-id="{{this.id}}" style="float: right; padding: 2px 3px 2px 0px;"></i>
+        <i class="fas fa-check-square change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}" style="float: right; padding: 2px 3px 2px 0px;"></i>
     </li>
 {{else}}
         <li class="eaten-list">
         {{burger_name}}
+        <i class="fas fa-trash-alt text-danger delete-burger" data-id="{{this.id}}" style="float: right; padding: 2px 3px 2px 0px;"></i>
     </li>
 {{/if}}
